@@ -1,0 +1,26 @@
+info:
+  name: create request
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://localhost:3000/09_module_b/api/requests
+  body:
+    type: json
+    data: |-
+      {
+        "category_id": "e1184a74-54f2-4106-a934-eca39b3f5c52",
+        "title": "Water Leakage",
+        "description": "Pipe leakage near house",
+        "location": "Hall No. 5, Kanha Shanti Vanam"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNAcy5jb20iLCJuYW1lIjoiU2FoaWwgR2FyZyIsImlkIjoiYjNhNTQwNWUtMGE3MS00ZGI5LTg2NGEtZWYyZTE0Y2UyMjQxIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDMtMTJUMTE6NDg6MzIuMTA4WiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MzM2NTMyMCwiZXhwIjoxNzczMzcyNTIwfQ.fm3WjIETp6UIfbd26QP8mG87K1fCjrI818CqZHFRtBM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

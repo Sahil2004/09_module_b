@@ -1,0 +1,24 @@
+info:
+  name: create category
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:3000/09_module_b/api/categories
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Water Supply",
+        "priority": "HIGH"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNAcy5jb20iLCJuYW1lIjoiU2FoaWwgR2FyZyIsImlkIjoiYjNhNTQwNWUtMGE3MS00ZGI5LTg2NGEtZWYyZTE0Y2UyMjQxIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDMtMTJUMTE6NDg6MzIuMTA4WiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MzM2NTMyMCwiZXhwIjoxNzczMzcyNTIwfQ.fm3WjIETp6UIfbd26QP8mG87K1fCjrI818CqZHFRtBM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

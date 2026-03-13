@@ -1,0 +1,24 @@
+info:
+  name: register user
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/09_module_b/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Sahil Garg",
+        "email": "s@s.com",
+        "password": "Password@123",
+        "role": "ADMIN"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: assign request
+  type: http
+  seq: 14
+
+http:
+  method: PUT
+  url: http://localhost:3000/09_module_b/api/requests/d98801a0-c7b6-4386-9f1f-0e8635276944/assign
+  body:
+    type: json
+    data: |-
+      {
+        "staff_id": "dec22840-91e6-4c7d-8529-9f6541c4103a",
+        "due_date": "28-02-2026"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNAcy5jb20iLCJuYW1lIjoiU2FoaWwgR2FyZyIsImlkIjoiYjNhNTQwNWUtMGE3MS00ZGI5LTg2NGEtZWYyZTE0Y2UyMjQxIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDMtMTJUMTE6NDg6MzIuMTA4WiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MzM2NTMyMCwiZXhwIjoxNzczMzcyNTIwfQ.fm3WjIETp6UIfbd26QP8mG87K1fCjrI818CqZHFRtBM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

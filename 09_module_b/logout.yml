@@ -1,0 +1,17 @@
+info:
+  name: logout
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:3000/09_module_b/api/auth/logout
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhdmlAZ21haWwuY29tIiwibmFtZSI6IlJhdmkgS3VtYXIiLCJpZCI6IjQxNGE3ZWU3LTg0MDYtNGZhNS1hM2I5LTEyZTFkMjQ5ZGFiZiIsImNyZWF0ZWRfYXQiOiIyMDI2LTAzLTEyVDExOjE3OjI3LjQxOVoiLCJyb2xlIjoiQ0lUSVpFTiIsImlhdCI6MTc3MzM2MzU3NCwiZXhwIjoxNzczMzcwNzc0fQ.D5YbseDXB0Kh4HhY_DTiiZexOg1Rmq3fk5FEnZx69yQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: view profile
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:3000/09_module_b/api/auth/profile
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhdmlAZ21haWwuY29tIiwibmFtZSI6IlJhdmkgS3VtYXIiLCJpZCI6IjQxNGE3ZWU3LTg0MDYtNGZhNS1hM2I5LTEyZTFkMjQ5ZGFiZiIsImNyZWF0ZWRfYXQiOiIyMDI2LTAzLTEyVDExOjE3OjI3LjQxOVoiLCJyb2xlIjoiQ0lUSVpFTiIsImlhdCI6MTc3MzM2MzU3NCwiZXhwIjoxNzczMzcwNzc0fQ.D5YbseDXB0Kh4HhY_DTiiZexOg1Rmq3fk5FEnZx69yQ
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

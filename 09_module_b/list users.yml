@@ -1,0 +1,17 @@
+info:
+  name: list users
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:3000/09_module_b/api/users
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNAcy5jb20iLCJuYW1lIjoiU2FoaWwgR2FyZyIsImlkIjoiYjNhNTQwNWUtMGE3MS00ZGI5LTg2NGEtZWYyZTE0Y2UyMjQxIiwiY3JlYXRlZF9hdCI6IjIwMjYtMDMtMTJUMTE6NDg6MzIuMTA4WiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MzM2NTMyMCwiZXhwIjoxNzczMzcyNTIwfQ.fm3WjIETp6UIfbd26QP8mG87K1fCjrI818CqZHFRtBM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -12,7 +12,7 @@ app.use(cors())
 
 const mainRouter = Router()
 
-app.use("/01_module_b/api", mainRouter)
+app.use("/09_module_b/api", mainRouter)
 
 mainRouter.use("/auth", authRouter);
 mainRouter.use("/users", userRouter)
